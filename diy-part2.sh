@@ -20,8 +20,11 @@
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 
-
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+git clone https://github.com/ophub/luci-app-amlogic.git package/amlogic
+git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+
 rm -rf package/feeds/packages/shadowsocks-libev
 git clone https://github.com/msdos03/openwrt-package-shadowsocks-libev.git package/shadowsocks-libev
 sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
