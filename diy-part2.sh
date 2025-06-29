@@ -18,5 +18,10 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+
+
+
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 rm -rf package/feeds/packages/shadowsocks-libev
 git clone https://github.com/msdos03/openwrt-package-shadowsocks-libev.git package/shadowsocks-libev
+sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
