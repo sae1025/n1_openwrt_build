@@ -18,3 +18,5 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+rm -rf package/feeds/packages/shadowsocks-libev
+git clone https://github.com/msdos03/openwrt-package-shadowsocks-libev.git package/shadowsocks-libev
